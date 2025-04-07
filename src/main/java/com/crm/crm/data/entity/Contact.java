@@ -43,6 +43,14 @@ public class Contact extends AbstractEntity{
 
     public String getLastName(){
         return lastName;
-    } 
+    }
+    
+    public Company getCompany(){
+        return company;
+    }
+
+    public Status getStatus(){
+        return status;
+    }
     
 }
