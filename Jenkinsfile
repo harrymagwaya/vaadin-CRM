@@ -5,11 +5,11 @@ pipeline{
             steps{
                 echo "Building the application"
 
-                sh 'mvn clean'
+                sh './mvnw clean'
 
                 echo "packaging the application"
 
-                sh 'mvn package'
+                sh './mvnw package'
             }
             post{
                 always{
@@ -27,7 +27,7 @@ pipeline{
         steps{
             echo "Starting to test my application"
 
-            sh 'mvn verify'
+            sh './mvnw verify'
         }
         post{
             always{
